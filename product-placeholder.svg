@@ -1,0 +1,18 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+
+    <rect width="400" height="400" rx="24" fill="#F5F9FF"></rect>
+
+    <rect x="145" y="100" width="110" height="220" rx="15" fill="#E7F2FB" stroke="#1769AA" stroke-width="4"></rect>
+
+    <rect x="165" y="78" width="70" height="30" rx="5" fill="#1769AA"></rect>
+
+    <rect x="155" y="175" width="90" height="85" rx="5" fill="#FFFFFF"></rect>
+
+    <path d="M200 191v48M176 215h48" stroke="#1769AA" stroke-width="8" stroke-linecap="round"></path>
+
+    <text x="200" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#153E75">
+        Görsel hazırlanıyor
+    </text>
+
+</svg>

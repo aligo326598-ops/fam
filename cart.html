@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | FAM Pharma Turkey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="assistant.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="cart-store.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+<body>
+
+<header class="customer-header">
+    <a href="index.html" class="customer-logo">
+        <img src="fam_logo.png" alt="FAM Pharma Turkey">
+    </a>
+
+    <nav class="customer-links">
+        <a href="products.html">Ürünler</a>
+        <a href="favorites.html">Favorilerim</a>
+        <a href="profile.html">Hesabım</a>
+    </nav>
+</header>
+
+<main class="customer-main">
+    <div class="customer-container">
+
+        <div class="customer-page-heading">
+            <span class="auth-label">ALIŞVERİŞ</span>
+            <h1>Sepetim</h1>
+            <p>Ürünlerinizi ve miktarlarını düzenleyin.</p>
+        </div>
+
+        <div class="cart-layout">
+
+            <section class="cart-panel">
+                <div id="cartItems"></div>
+
+                <div id="cartEmpty" class="customer-empty" hidden>
+                    <h2>Sepetiniz boş</h2>
+                    <p>Alışverişe başlamak için ürünleri keşfedin.</p>
+                    <a href="products.html" class="btn btn-primary">
+                        Ürünlere Git
+                    </a>
+                </div>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Sipariş Özeti</h2>
+
+                <div class="summary-line">
+                    <span>Ürün Tutarı</span>
+                    <strong id="cartSubtotal">—</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Kargo</span>
+                    <strong id="cartShipping">—</strong>
+                </div>
+
+                <div class="summary-line summary-total">
+                    <span>Toplam</span>
+                    <strong id="cartTotal">—</strong>
+                </div>
+
+                <p class="summary-note">
+                    1.000 TL ve üzeri alışverişlerde kargo ücretsiz!
+                    Kapıda ödeme için ayrıca 50 TL alınır.
+                </p>
+
+                <a href="checkout.html"
+                   class="auth-submit shopping-submit-link"
+                   id="checkoutLink">
+                    Siparişi Tamamla →
+                </a>
+
+                <p id="cartMessage"
+                   class="summary-note"
+                   aria-live="polite"></p>
+            </aside>
+
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>

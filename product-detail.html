@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı | FAM Pharma Turkey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assistant.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="cart-store.js" defer></script>
+    <script src="product-detail.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>FAM Pharma Turkey</span>
+            <span>Ürün detayları</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="fam_logo.png"
+                     alt="FAM Pharma Turkey"
+                     onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+                <span class="logo-fallback" hidden>FAM Pharma Turkey</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="products.html" class="active">Ürünler</a>
+                <a href="index.html#kategoriler">Kategoriler</a>
+            </nav>
+
+            <a class="btn btn-outline" href="products.html">
+                ← Ürünlere Dön
+            </a>
+        </div>
+    </header>
+
+    <main class="detail-page">
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="index.html">Ana Sayfa</a>
+                <span>/</span>
+                <a href="products.html">Ürünler</a>
+                <span>/</span>
+                <span id="breadcrumbName">Ürün Detayı</span>
+            </div>
+
+            <div id="detailError" class="empty-state" hidden>
+                <h2>Ürün bulunamadı</h2>
+                <p>Aradığınız ürün mevcut değil.</p>
+                <a class="btn btn-primary" href="products.html">
+                    Ürünlere Dön
+                </a>
+            </div>
+
+            <div id="detailContent" class="detail-grid" hidden>
+
+                <div class="detail-gallery">
+
+                    <div class="detail-main-image">
+                        <img id="detailImage"
+                             src="product-placeholder.svg"
+                             alt="Ürün fotoğrafı">
+                    </div>
+
+                    <div class="detail-thumbnails">
+                        <button type="button"
+                                id="frontImageButton"
+                                class="detail-thumbnail selected">
+                            <img id="frontThumb" alt="Ön görsel">
+                            <span>Ön Görsel</span>
+                        </button>
+
+                        <button type="button"
+                                id="backImageButton"
+                                class="detail-thumbnail">
+                            <img id="backThumb" alt="Arka görsel">
+                            <span>Arka Görsel</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="detail-info">
+
+                    <span class="section-label">
+                        FAM PHARMA TURKEY
+                    </span>
+
+                    <h1 id="detailName"></h1>
+
+                    <p class="detail-category" id="detailType"></p>
+
+                    <div class="detail-divider"></div>
+
+                    <div class="detail-price-area">
+                        <span>Ürün Fiyatı</span>
+                        <strong id="detailPrice">Fiyat yükleniyor...</strong>
+                        <small id="detailStock">Stok bilgisi yükleniyor...</small>
+                    </div>
+
+                    <div class="detail-actions">
+                        <button id="favoriteButton"
+                                class="btn btn-outline"
+                                type="button">
+                            ♡ Favorilere Ekle
+                        </button>
+
+                        <button id="cartButton"
+                                class="btn btn-primary"
+                                type="button"
+                                disabled>
+                            Sepete Ekle
+                        </button>
+                    </div>
+
+                    <p id="favoriteNotice"
+                       class="detail-help"
+                       aria-live="polite"></p>
+
+
+                    <div class="detail-description">
+                        <h2>Ürün Hakkında</h2>
+                        <p id="detailDescription">
+                           Ürün açıklaması yükleniyor...
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <span>FAM Pharma Turkey</span>
+            <span>Ürün detay sayfası</span>
+        </div>
+    </footer>
+
+</body>
+</html>

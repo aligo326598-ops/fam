@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler | FAM Pharma Turkey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assistant.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="catalog.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>FAM Pharma Turkey</span>
+            <span>Ürün kataloğumuzu keşfedin</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="fam_logo.png"
+                     alt="FAM Pharma Turkey"
+                     onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+                <span class="logo-fallback" hidden>FAM Pharma Turkey</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="products.html" class="active">Ürünler</a>
+                <a href="index.html#kategoriler">Kategoriler</a>
+                <a href="index.html#hakkimizda">Hakkımızda</a>
+                <a href="index.html#iletisim">İletişim</a>
+            </nav>
+
+            <a href="index.html" class="btn btn-outline">
+                Ana Sayfaya Dön
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <span class="section-label">FAM PHARMA TURKEY</span>
+                <h1>Ürünlerimiz</h1>
+                <p>
+                    Ürün koleksiyonumuzu keşfedin.
+                    Ürünlerin ön ve arka ambalajlarını inceleyin.
+                </p>
+            </div>
+        </section>
+
+        <section class="section products-section">
+            <div class="container">
+
+                <div class="product-toolbar">
+                    <div class="search-field">
+                        <span aria-hidden="true">⌕</span>
+                        <input type="search"
+                               id="productSearch"
+                               placeholder="Ürün adıyla ara..."
+                               aria-label="Ürün ara">
+                    </div>
+
+                    <select id="categoryFilter"
+                            aria-label="Ürün formu">
+                        <option value="Tümü">Tüm Ürünler</option>
+                        <option value="Kapsül">Kapsüller</option>
+                        <option value="Şurup">Şuruplar</option>
+                        <option value="Tablet">Tabletler</option>
+                        <option value="Diğer">Diğer</option>
+                    </select>
+                </div>
+
+                <div class="product-results">
+                    <span id="productCount" aria-live="polite"></span>
+                    <button type="button"
+                            id="clearFilters"
+                            class="clear-filters">
+                        Filtreleri Temizle
+                    </button>
+                </div>
+
+                <div class="products-grid" id="productsGrid"></div>
+
+                <div class="empty-state" id="emptyState" hidden>
+                    <h3>Ürün bulunamadı</h3>
+                    <p>Farklı bir arama veya kategori deneyin.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <span>FAM Pharma Turkey</span>
+        </div>
+    </footer>
+
+</body>
+</html>

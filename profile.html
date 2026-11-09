@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Hesabım | FAM Pharma Turkey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="assistant.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="cart-store.js" defer></script>
+    <script src="profile.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+
+<body>
+
+<header class="customer-header">
+    <a href="index.html" class="customer-logo">
+        <img src="fam_logo.png"
+             alt="FAM Pharma Turkey">
+    </a>
+
+    <nav class="customer-links"
+         aria-label="Müşteri menüsü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="products.html">Ürünler</a>
+        <a href="favorites.html">Favorilerim</a>
+        <a href="cart.html">Sepetim</a>
+        <a href="login.html">Giriş Yap</a>
+    </nav>
+</header>
+
+<main class="customer-main">
+
+    <div class="customer-container profile-container">
+
+        <div class="customer-page-heading">
+            <span class="auth-label">MÜŞTERİ PANELİ</span>
+
+            <h1>Hesabım</h1>
+
+            <p>
+                Siparişlerinizi, adreslerinizi ve
+                favori ürünlerinizi tek yerden yönetin.
+            </p>
+        </div>
+
+        <!-- PROFİL KARTI -->
+        <section class="profile-hero">
+
+            <div class="profile-avatar"
+                 aria-hidden="true">
+                <span>👤</span>
+            </div>
+
+            <div class="profile-hero-text">
+                <span class="profile-eyebrow">
+                    FAM PHARMA TURKEY
+                </span>
+
+                <h2>Müşteri Paneli</h2>
+            </div>
+
+            <a href="login.html"
+               class="profile-login-button">
+                Giriş Yap
+            </a>
+
+        </section>
+
+        <!-- SAYI KARTLARI -->
+        <section class="profile-stats"
+                 aria-label="Hesap özeti">
+
+            <a href="orders.html"
+               class="profile-stat-card">
+                <span class="profile-stat-icon">📦</span>
+                <strong id="profileOrderCount">0</strong>
+                <span>Siparişlerim</span>
+            </a>
+
+            <a href="favorites.html"
+               class="profile-stat-card">
+                <span class="profile-stat-icon">♡</span>
+                <strong id="profileFavoriteCount">0</strong>
+                <span>Favorilerim</span>
+            </a>
+
+            <a href="addresses.html"
+               class="profile-stat-card">
+                <span class="profile-stat-icon">📍</span>
+                <strong id="profileAddressCount">0</strong>
+                <span>Adreslerim</span>
+            </a>
+
+            <a href="cart.html"
+               class="profile-stat-card">
+                <span class="profile-stat-icon">🛒</span>
+                <strong id="profileCartCount">0</strong>
+                <span>Sepetim</span>
+            </a>
+
+        </section>
+
+        <!-- HESAP İŞLEMLERİ -->
+        <section class="profile-panel">
+            <div class="profile-section-heading">
+                <div>
+                    <h2>Hesap İşlemleri</h2>
+                    <p>İlgili bölüme hızlıca ulaşın.</p>
+                </div>
+            </div>
+
+            <div class="profile-menu-grid">
+
+                <a href="orders.html"
+                   class="profile-menu-item">
+                    <span class="profile-menu-icon">📦</span>
+                    <span>
+                        <strong>Siparişlerim</strong>
+                        <small>
+                            Sipariş durumları ve detayları
+                        </small>
+                    </span>
+                    <span class="profile-arrow">›</span>
+                </a>
+
+                <a href="addresses.html"
+                   class="profile-menu-item">
+                    <span class="profile-menu-icon">📍</span>
+                    <span>
+                        <strong>Adreslerim</strong>
+                        <small>
+                            Adres ekle, düzenle ve sil
+                        </small>
+                    </span>
+                    <span class="profile-arrow">›</span>
+                </a>
+
+                <a href="favorites.html"
+                   class="profile-menu-item">
+                    <span class="profile-menu-icon">♡</span>
+                    <span>
+                        <strong>Favorilerim</strong>
+                        <small>
+                            Kaydettiğiniz ürünleri görüntüleyin
+                        </small>
+                    </span>
+                    <span class="profile-arrow">›</span>
+                </a>
+
+                <a href="cart.html"
+                   class="profile-menu-item">
+                    <span class="profile-menu-icon">🛒</span>
+                    <span>
+                        <strong>Sepetim</strong>
+                        <small>
+                            Alışveriş sepetimi görüntüle
+                        </small>
+                    </span>
+                    <span class="profile-arrow">›</span>
+                </a>
+
+                <a href="forgot-password.html"
+                   class="profile-menu-item">
+                    <span class="profile-menu-icon">🔒</span>
+                    <span>
+                        <strong>Şifremi Unuttum</strong>
+                        <small>
+                            Şifre sıfırlama ekranı
+                        </small>
+                    </span>
+                    <span class="profile-arrow">›</span>
+                </a>
+
+                <a href="products.html"
+                   class="profile-menu-item">
+                    <span class="profile-menu-icon">🛍️</span>
+                    <span>
+                        <strong>Alışverişe Devam Et</strong>
+                        <small>
+                            Tüm vitamin ürünlerini keşfet
+                        </small>
+                    </span>
+                    <span class="profile-arrow">›</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SON SİPARİŞ -->
+        <section class="profile-panel">
+
+            <div class="profile-section-heading">
+                <div>
+                    <h2>Son Siparişim</h2>
+                    <p>
+                        En son oluşturulan sipariş
+                        ve güncel durumu
+                    </p>
+                </div>
+
+                <a href="orders.html"
+                   class="profile-view-all">
+                    Tümünü Gör →
+                </a>
+            </div>
+
+            <div id="profileLatestOrder">
+                <!-- JavaScript ile doldurulur -->
+            </div>
+
+        </section>
+
+        <!-- VARSAYILAN ADRES -->
+        <section class="profile-panel">
+
+            <div class="profile-section-heading">
+                <div>
+                    <h2>Varsayılan Teslimat Adresim</h2>
+                    <p>
+                        Siparişlerinizde kullanabileceğiniz
+                        kayıtlı adres
+                    </p>
+                </div>
+
+                <a href="addresses.html"
+                   class="profile-view-all">
+                    Adreslerimi Yönet →
+                </a>
+            </div>
+
+            <div id="profileDefaultAddress">
+                <!-- JavaScript ile doldurulur -->
+            </div>
+
+        </section>
+
+        <!-- HESAP BİLGİLERİ -->
+        <section class="profile-panel">
+
+            <div class="profile-section-heading">
+                <div>
+                    <h2>Kişisel Bilgilerim</h2>
+                    <p>
+                        Hesap bilgilerinin yönetileceği alan
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile-locked">
+
+                <div class="profile-lock-icon">🔐</div>
+
+                <div>
+                    <strong>
+                        Hesap bilgileri backend aşamasında açılacak
+                    </strong>
+
+                    <p>
+                        Ad soyad, e-posta, telefon numarası
+                        ve şifre değiştirme işlemleri,
+                        güvenli kullanıcı girişi
+                        tamamlandığında kullanılabilir olacak.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="profile-bottom-link">
+            <a href="index.html">
+                ← Ana Sayfaya Dön
+            </a>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

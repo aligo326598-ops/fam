@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorilerim | FAM Pharma Turkey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="assistant.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="customer.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+<body>
+    <header class="customer-header">
+        <a href="index.html" class="customer-logo">
+            <img src="fam_logo.png"
+                 alt="FAM Pharma Turkey">
+        </a>
+
+        <nav class="customer-links" aria-label="Müşteri menüsü">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="products.html">Ürünler</a>
+            <a href="cart.html">Sepetim</a>
+        </nav>
+    </header>
+
+    <main class="customer-main">
+        <div class="customer-container">
+            <div class="customer-page-heading">
+                <span class="auth-label">HESABIM</span>
+                <h1>Favorilerim</h1>
+                <p>Beğendiğiniz ürünleri buradan inceleyebilirsiniz.</p>
+            </div>
+
+            <div class="favorites-summary">
+                <span id="favoritesCount">0 favori ürün</span>
+            </div>
+
+            <div class="products-grid" id="favoritesGrid"></div>
+
+            <div class="customer-empty" id="favoritesEmpty" hidden>
+                <div class="empty-heart">♡</div>
+                <h2>Henüz favori ürününüz yok</h2>
+                <p>
+                    Ürün detaylarına girerek beğendiğiniz
+                    ürünleri favorilerinize ekleyebilirsiniz.
+                </p>
+                <a href="products.html" class="btn btn-primary">
+                    Ürünleri Keşfet
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Tamamlama | FAM Pharma Turkey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="assistant.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="cart-store.js" defer></script>
+    <script src="shopping.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+<body>
+
+<header class="customer-header">
+    <a href="index.html" class="customer-logo">
+        <img src="fam_logo.png" alt="FAM Pharma Turkey">
+    </a>
+    <nav class="customer-links">
+        <a href="cart.html">← Sepete Dön</a>
+        <a href="profile.html">Hesabım</a>
+    </nav>
+</header>
+
+<main class="customer-main">
+    <div class="customer-container">
+
+        <div class="customer-page-heading">
+            <span class="auth-label">ALIŞVERİŞ</span>
+            <h1>Sipariş Tamamlama</h1>
+            <p>Adres ve ödeme yöntemini seçin.</p>
+        </div>
+
+        <div class="cart-layout">
+            <form id="checkoutForm" class="shopping-panel">
+
+                <h2>1. Teslimat Adresi</h2>
+
+                <label for="checkoutAddress">
+                    Kayıtlı adres seçin
+                </label>
+
+                <select id="checkoutAddress" required>
+                    <option value="">Adres seçiniz</option>
+                </select>
+
+                <p class="summary-note">
+                    Adresiniz yoksa
+                    <a href="addresses.html">yeni adres ekleyin</a>.
+                </p>
+
+                <div class="shopping-divider"></div>
+
+                <h2>2. Ödeme Yöntemi</h2>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod"
+                           value="card" checked>
+                    <span>
+                        <strong>Kartla Ödeme</strong>
+                        <small>Demo ödeme seçimi. Kart bilgisi alınmaz.</small>
+                    </span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod"
+                           value="cod">
+                    <span>
+                        <strong>Kapıda Ödeme</strong>
+                        <small>50 TL ek hizmet ücreti</small>
+                    </span>
+                </label>
+
+                <button class="auth-submit"
+                        id="placeOrderButton"
+                        type="submit">
+                     Siparişi Oluştur
+                </button>
+
+                <p id="checkoutMessage"
+                   class="summary-note"
+                   role="status"></p>
+            </form>
+
+            <aside class="cart-summary">
+
+                <h2>Sipariş Özeti</h2>
+
+                <div id="checkoutProducts"></div>
+
+                <div class="shopping-divider"></div>
+
+                <div class="summary-line">
+                    <span>Ürün Tutarı</span>
+                    <strong id="checkoutSubtotal">—</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Kargo Ücreti</span>
+                    <strong id="checkoutShipping">—</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Kapıda Ödeme</span>
+                    <strong id="checkoutCodFee">—</strong>
+                </div>
+
+                <div class="summary-line summary-total">
+                    <span>Genel Toplam</span>
+                    <strong id="checkoutTotal">—</strong>
+                </div>
+
+            </aside>
+        </div>
+
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap | FAM Pharma Turkey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customer.css">
+    <script src="customer.js" defer></script>
+</head>
+<body>
+    <header class="customer-header">
+        <a href="index.html" class="customer-logo">
+            <img src="fam_logo.png"
+                 alt="FAM Pharma Turkey">
+        </a>
+        <a href="index.html" class="customer-back">
+            ← Mağazaya Dön
+        </a>
+    </header>
+
+    <main class="auth-wrapper">
+        <section class="auth-card">
+            <div class="auth-heading">
+                <span class="auth-label">FAM PHARMA TURKEY</span>
+                <h1>Hoş Geldiniz</h1>
+                <p>Hesabınıza giriş yapın.</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <label for="loginEmail">E-posta Adresi</label>
+                <input type="email" id="loginEmail"
+                       autocomplete="email"
+                       placeholder="ornek@mail.com" required>
+
+                <label for="loginPassword">Şifre</label>
+                <div class="password-field">
+                    <input type="password" id="loginPassword"
+                           autocomplete="current-password"
+                           placeholder="Şifrenizi girin" required>
+                    <button type="button"
+                            data-password-toggle="loginPassword">
+                        Göster
+                    </button>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    Giriş Yap
+                </button>
+                <a href="forgot-password.html"
+                class="forgot-password-link">
+                Şifremi Unuttum</a>
+            </form>
+
+            <p id="authMessage" class="auth-message"
+               role="status" aria-live="polite"></p>
+
+            <div class="auth-footer">
+                Hesabınız yok mu?
+                <a href="register.html">Kayıt Olun</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAM Pharma Turkey | Vitamin ve Takviye Ürünleri</title>
+
+    <meta name="description"
+          content="FAM Pharma Turkey ürün kataloğunu keşfedin.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assistant.css">
+    
+    <script src="products-data.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="auth-ui.js" defer></script>
+    <script src="assistant.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ÜST BİLGİ ŞERİDİ -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>FAM Pharma Turkey</span>
+            <span>Ürün kataloğumuzu keşfedin</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="fam_logo.png"
+                     alt="FAM Pharma Turkey Logo"
+                     width="170"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+
+                <span class="logo-fallback">
+                    FAM Pharma Turkey
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Ana menü">
+                <a href="index.html" class="active">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="#kategoriler">Kategoriler</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+
+            <div class="header-actions">
+                
+
+                <a href="cart.html" class="header-customer-link"
+                   aria-label="Sepetim" title="Sepetim">🛒</a>
+
+                <a href="profile.html" class="header-customer-link" title="Hesabım" aria-label="Hesabım">
+                    👤
+                </a>
+
+                <a href="login.html" id="authMenuButton" class="demo-login">
+                    Giriş Yap
+                </a>
+
+                <button class="menu-toggle"
+                        type="button"
+                        aria-label="Menüyü aç"
+                        aria-expanded="false"
+                        aria-controls="mobileNav">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBİL MENÜ -->
+        <nav class="mobile-nav"
+             id="mobileNav"
+             aria-label="Mobil menü"
+             hidden>
+
+            <a href="index.html">Ana Sayfa</a>
+            <a href="products.html">Ürünler</a>
+            <a href="#kategoriler">Kategoriler</a>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">
+                        FAM PHARMA TURKEY
+                    </span>
+
+                    <h1>
+                        Ürünlerimizi
+                        <span>Keşfedin</span>
+                    </h1>
+
+                    <p>
+                        FAM Pharma Turkey ürün koleksiyonunu
+                        inceleyin, farklı ürün gruplarını keşfedin
+                        ve ambalaj bilgilerini görüntüleyin.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="products.html"
+                           class="btn btn-primary">
+                            Ürünleri İncele
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="#hakkimizda"
+                           class="btn btn-outline">
+                            Hakkımızda
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="note-icon">✓</span>
+                        <span>
+                            Ürün ambalaj görselleriyle
+                            hazırlanan katalog önizlemesi
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="hero-glow"></div>
+
+                    <div class="hero-product-card">
+
+                        <img id="heroProductImage"
+                             src="atoz25-front.jpeg"
+                             alt="FAM Pharma Turkey ürün ambalajı"
+                             width="360"
+                             height="360"
+                             onerror="this.onerror=null;this.src='images/ui/product-placeholder.svg'">
+
+                        <div class="hero-product-info">
+                            <span>Ürün Koleksiyonu</span>
+                            <strong>FAM Pharma Turkey</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-label floating-top">
+                        Vitamin ve Takviye Ürünleri
+                    </div>
+
+                    <div class="floating-label floating-bottom">
+                        Ürünleri Yakından Tanıyın
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ÖZELLİKLER -->
+        <section class="features">
+            <div class="container features-grid">
+
+                <article class="feature-item">
+                    <div class="feature-icon">◈</div>
+                    <div>
+                        <h3>Ürün Kataloğu</h3>
+                        <p>Ürünleri kolayca inceleyin.</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <div class="feature-icon">▣</div>
+                    <div>
+                        <h3>Ambalaj Detayları</h3>
+                        <p>Ön ve arka görselleri görüntüleyin.</p>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <div class="feature-icon">⌕</div>
+                    <div>
+                        <h3>Kolay Arama</h3>
+                        <p>Ürünlere hızlıca ulaşın.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- KATEGORİLER -->
+        <section class="section categories-section"
+                 id="kategoriler">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        ÜRÜN GRUPLARI
+                    </span>
+
+                    <h2>Ürünleri Forma Göre Keşfedin</h2>
+
+                    <p>
+                        İlgilendiğiniz ürün grubunu seçerek
+                        o gruba ait ürünleri görüntüleyebilirsiniz.
+                    </p>
+
+                </div>
+
+                <div class="categories-grid">
+
+                    <!-- KAPSÜLLER -->
+                    <a href="products.html?category=Kapsül"
+                       class="category-card">
+
+                        <span class="category-symbol">◉</span>
+
+                        <h3>Kapsüller</h3>
+
+                        <p>
+                            Kapsül formundaki ürünler
+                        </p>
+
+                        <span class="category-action">
+                            Ürünleri Gör →
+                        </span>
+
+                    </a>
+
+                    <!-- ŞURUPLAR -->
+                    <a href="products.html?category=Şurup"
+                       class="category-card">
+
+                        <span class="category-symbol">◧</span>
+
+                        <h3>Şuruplar</h3>
+
+                        <p>
+                            Şurup formundaki ürünler
+                        </p>
+
+                        <span class="category-action">
+                            Ürünleri Gör →
+                        </span>
+
+                    </a>
+
+                    <!-- TABLETLER -->
+                    <a href="products.html?category=Tablet"
+                       class="category-card">
+
+                        <span class="category-symbol">▤</span>
+
+                        <h3>Tabletler</h3>
+
+                        <p>
+                            Tablet formundaki ürünler
+                        </p>
+
+                        <span class="category-action">
+                            Ürünleri Gör →
+                        </span>
+
+                    </a>
+
+                    <!-- DİĞER -->
+                    <a href="products.html?category=Diğer"
+                       class="category-card">
+
+                        <span class="category-symbol">✦</span>
+
+                        <h3>Diğer Ürünler</h3>
+
+                        <p>
+                            Diğer ambalaj formları
+                        </p>
+
+                        <span class="category-action">
+                            Ürünleri Gör →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ANA SAYFA: SADECE 3 ÜRÜN -->
+        <section class="section products-section"
+                 id="urunler">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        ÜRÜN KOLEKSİYONU
+                    </span>
+
+                    <h2>Ürünlerimizi Keşfedin</h2>
+
+                    <p>
+                        FAM Pharma Turkey koleksiyonundan
+                        seçili ürünleri inceleyin.
+                    </p>
+
+                </div>
+
+                <!-- SADECE 3 ÜRÜN GÖSTERİLECEK -->
+                <div class="products-grid"
+                     id="featuredProducts">
+
+                    <!-- Ürün kartları main.js tarafından oluşturulur -->
+
+                </div>
+
+                <!-- TÜM ÜRÜNLERE GEÇİŞ -->
+                <div class="featured-footer">
+
+                    <a href="products.html"
+                       class="btn btn-primary">
+                        Tüm Ürünleri Gör →
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HAKKIMIZDA -->
+        
+<!-- HAKKIMIZDA -->
+<section class="section about-section" id="hakkimizda">
+
+    <div class="container about-grid">
+
+        <div class="about-visual">
+
+            <div class="about-logo-box">
+                <img src="fam_logo.png"
+                     alt="FAM Pharma Turkey Logosu"
+                     loading="lazy"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+
+                <span class="about-logo-fallback">
+                    FAM Pharma Turkey
+                </span>
+            </div>
+
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-label">
+                HAKKIMIZDA
+            </span>
+
+            <h2>FAM Pharma Turkey</h2>
+
+            <p>
+                FAM Pharma Turkey, 2016 yılında
+                Türkiye'nin Gaziantep şehrinde kurulmuştur.
+                Kuruluşumuzdan bu yana ürün portföyümüzü
+                geliştirmeye ve uluslararası pazardaki
+                faaliyetlerimizi genişletmeye devam ediyoruz.
+            </p>
+
+            <p>
+                Yemen, Libya, Irak, Ürdün, Filistin ve
+                Avrupa'daki çeşitli bölgeler dâhil olmak
+                üzere dünya genelinde 15'ten fazla
+                bayimiz ve temsilcimiz bulunmaktadır.
+            </p>
+
+            <p>
+                Şirketimiz, farklı ülkelerdeki ilgili resmî
+                kurumlarda kayıtlı 15'ten fazla ürünüyle
+                faaliyetlerini sürdürmektedir.
+            </p>
+
+            <p>
+                Hedefimiz, iş ortaklarımızla birlikte
+                büyüyerek ürün çeşitliliğimizi artırmak
+                ve uluslararası alanda daha geniş
+                kitlelere ulaşmaktır.
+            </p>
+
+            <p>
+                <strong>CEO:</strong>
+                Yusuf Tütüncü
+            </p>
+
+            <a href="products.html"
+               class="btn btn-primary">
+                Ürünlerimizi Keşfedin →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- İLETİŞİM -->
+        
+<!-- İLETİŞİM -->
+<section class="section contact-section" id="iletisim">
+
+    <div class="container">
+
+        <div class="contact-panel">
+
+            <div>
+
+                <span class="section-label">
+                    İLETİŞİM
+                </span>
+
+                <h2>Bizimle İletişime Geçin</h2>
+
+                <p>
+                    FAM Pharma Turkey ürünleri,
+                    bayilik ve iş birliği konularında
+                    bizimle iletişime geçebilirsiniz.
+                </p>
+
+                <p style="margin-top: 15px;">
+                    <strong>
+                        CEO: Yusuf Tütüncü
+                    </strong>
+                </p>
+
+            </div>
+
+            <div class="contact-status">
+
+                <span>☎</span>
+
+                <strong>Telefon</strong>
+
+                <p>
+                    <a href="tel:+905523020149">
+                        0552 302 01 49
+                    </a>
+                </p>
+
+                <br>
+
+                <span>✉</span>
+
+                <strong>E-posta</strong>
+
+                <p>
+                    <a href="mailto:Youseftotonji9@gmail.com">
+                        Youseftotonji9@gmail.com
+                    </a>
+                </p>
+
+                <br>
+
+                <strong>Konum</strong>
+
+                <p>
+                    Gaziantep, Türkiye
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <h3>FAM Pharma Turkey</h3>
+
+                <p>
+                    Vitamin ve takviye ürünleri kataloğu.
+                    Ürünleri keşfedin ve ambalaj
+                    bilgilerini inceleyin.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Hızlı Bağlantılar</h4>
+
+                <a href="index.html">Ana Sayfa</a>
+                <a href="products.html">Ürünler</a>
+                <a href="#kategoriler">Kategoriler</a>
+
+            </div>
+
+            <div>
+
+                <h4>Kurumsal</h4>
+
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#iletisim">İletişim</a>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom" >
+
+            <span>
+                © <span id="year" ></span> FAM Pharma Turkey
+            </span>
+        </div>
+
+    </footer>
+
+</body>
+</html>

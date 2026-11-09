@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sipariş Detayı | FAM Pharma Turkey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="css/shopping.css">
+
+    <script src="products-data.js" defer></script>
+    <script src="cart-store.js" defer></script>
+    <script src="order-detail.js" defer></script>
+</head>
+<body>
+
+<header class="customer-header">
+    <a href="index.html" class="customer-logo">
+        <img src="fam_logo.png"
+             alt="FAM Pharma Turkey">
+    </a>
+
+    <nav class="customer-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="orders.html">Siparişlerim</a>
+    </nav>
+</header>
+
+<main class="customer-main">
+    <div class="customer-container">
+
+        <div class="customer-page-heading">
+            <span class="auth-label">SİPARİŞ TAKİBİ</span>
+            <h1>Sipariş Detayı</h1>
+            <p id="orderNumber">Sipariş bilgileri yükleniyor...</p>
+        </div>
+
+        <div id="orderNotFound" class="customer-empty" hidden>
+            <h2>Sipariş bulunamadı</h2>
+            <a href="orders.html" class="btn btn-primary">
+                Siparişlerime Dön
+            </a>
+        </div>
+
+        <div id="orderDetailContent" hidden>
+
+            <section class="shopping-panel">
+                <div class="order-detail-heading">
+                    <div>
+                        <h2>Sipariş Durumu</h2>
+                        <p id="orderDate"></p>
+                    </div>
+
+                    <span id="currentOrderStatus"
+                          class="order-status-label">
+                    </span>
+                </div>
+
+                <div class="order-tracking" id="orderTracking">
+                    <!-- JavaScript dolduracak -->
+                </div>
+            </section>
+
+            <div class="shopping-two-columns">
+
+                <section class="shopping-panel">
+                    <h2>Sipariş Edilen Ürünler</h2>
+                    <div id="orderDetailItems"></div>
+                </section>
+
+                <section class="shopping-panel">
+                    <h2>Teslimat Bilgileri</h2>
+                    <div id="orderAddress"></div>
+
+                    <div class="shopping-divider"></div>
+
+                    <h2>Ödeme Bilgileri</h2>
+                    <p id="orderPaymentMethod"></p>
+                    <p id="orderPaymentStatus"></p>
+                </section>
+
+            </div>
+
+            <section class="shopping-panel">
+                <h2>Ücret Özeti</h2>
+
+                <div class="summary-line">
+                    <span>Ürün Toplamı</span>
+                    <strong id="detailSubtotal"></strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Kargo</span>
+                    <strong id="detailShipping"></strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Kapıda Ödeme Ücreti</span>
+                    <strong id="detailCodFee"></strong>
+                </div>
+
+                <div class="summary-line summary-total">
+                    <span>Genel Toplam</span>
+                    <strong id="detailTotal"></strong>
+                </div>
+            </section>
+
+            <a href="orders.html" class="btn btn-outline">
+                ← Siparişlerime Dön
+            </a>
+
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
